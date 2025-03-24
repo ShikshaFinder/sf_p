@@ -7,13 +7,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HeroVideoDialogDemo } from "@/components/video";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-50/80 via-blue-300/50 to-white min-h-[90vh] flex items-center">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-b from-blue-50/80 via-blue-300/50 to-white min-h-[90vh] flex items-center ">
+        <div className="container mx-auto px-4 mt-12">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black">
               Shiksha Finder
@@ -40,6 +41,9 @@ export default function Home() {
               >
                 Learn More
               </Button>
+            </div>
+            <div className="mt-12">
+              <HeroVideoDialogDemo />
             </div>
           </div>
         </div>
