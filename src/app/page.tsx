@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HeroVideoDialogDemo } from "@/components/video";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -252,6 +253,8 @@ export default function Home() {
           </Button>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
