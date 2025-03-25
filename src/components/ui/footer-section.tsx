@@ -21,6 +21,7 @@ import {
   Sun,
   Twitter,
 } from "lucide-react";
+import Image from "next/image";
 
 function Footerdemo() {
   const [isChatOpen, setIsChatOpen] = React.useState(false);
@@ -33,6 +34,13 @@ function Footerdemo() {
             <h2 className="mb-4 text-3xl font-bold tracking-tight">
               Stay Connected
             </h2>
+            <Image
+              src="/startup.png"
+              alt="Startup India Recognition"
+              width={200}
+              height={20}
+              className="mb-4"
+            />
             <p className="mb-6 text-muted-foreground">
               Join our newsletter for the latest updates and exclusive offers.
             </p>
@@ -55,33 +63,33 @@ function Footerdemo() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
-            <nav className="space-y-2 text-sm">
+            <nav className="space-y-2 text-base">
               <a
-                href="#"
+                href="https://shikshafinder.com/"
                 className="block transition-colors hover:text-primary"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="https://shikshafinder.com/"
                 className="block transition-colors hover:text-primary"
               >
                 About Us
               </a>
               <a
-                href="#"
+                href="https://shikshafinder.com/"
                 className="block transition-colors hover:text-primary"
               >
                 Services
               </a>
               <a
-                href="#"
+                href="https://shikshafinder.com/"
                 className="block transition-colors hover:text-primary"
               >
                 Products
               </a>
               <a
-                href="#"
+                href="https://shikshafinder.com/"
                 className="block transition-colors hover:text-primary"
               >
                 Contact
@@ -90,7 +98,7 @@ function Footerdemo() {
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-            <address className="space-y-2 text-sm not-italic">
+            <address className="space-y-2 text-base not-italic">
               <p>123 Innovation Street</p>
               <p>Tech City, TC 12345</p>
               <p>Phone: (123) 456-7890</p>
@@ -172,17 +180,27 @@ function Footerdemo() {
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
-          <p className="text-sm text-muted-foreground">
-            © 2024 Your Company. All rights reserved.
-          </p>
-          <nav className="flex gap-4 text-sm">
-            <a href="#" className="transition-colors hover:text-primary">
+          <div className="text-base text-muted-foreground">
+            <p>© 2024 ShikshaFinder. All rights reserved.</p>
+            <p>Registered under GWSF Ventures PVT LTD</p>
+          </div>
+          <nav className="flex gap-4 text-base">
+            <a
+              href="https://shikshafinder.com/"
+              className="transition-colors hover:text-primary"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="transition-colors hover:text-primary">
+            <a
+              href="https://shikshafinder.com/"
+              className="transition-colors hover:text-primary"
+            >
               Terms of Service
             </a>
-            <a href="#" className="transition-colors hover:text-primary">
+            <a
+              href="https://shikshafinder.com/"
+              className="transition-colors hover:text-primary"
+            >
               Cookie Settings
             </a>
           </nav>
